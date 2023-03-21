@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.alibaba.cola</groupId>
         <artifactId>cola-components-parent</artifactId>
-        <version>4.4.0-SNAPSHOT</version>
+        <version>5.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>cola-component-test-container</artifactId>
@@ -71,8 +71,8 @@
             more info see https://stackoverflow.com/a/55622713/922688
         -->
         <dependency>
-            <groupId>javax.annotation</groupId>
-            <artifactId>javax.annotation-api</artifactId>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>

@@ -1,7 +1,7 @@
 package com.alibaba.craftsman.api;
 
-import com.alibaba.cola.dto.MultiResponse;
-import com.alibaba.cola.dto.Response;
+import com.szmengran.cola.dto.MultiResponse;
+import com.szmengran.cola.dto.Response;
 import com.alibaba.craftsman.dto.*;
 import com.alibaba.craftsman.dto.clientobject.ATAMetricCO;
 

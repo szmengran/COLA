@@ -1,6 +1,6 @@
 package com.alibaba.craftsman.command;
 
-import com.alibaba.cola.dto.Response;
+import com.szmengran.cola.dto.Response;
 import com.alibaba.craftsman.domain.metrics.techinfluence.InfluenceMetric;
 import com.alibaba.craftsman.domain.metrics.techinfluence.PaperMetric;
 import com.alibaba.craftsman.domain.metrics.techinfluence.PaperMetricItem;

@@ -23,7 +23,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.alibaba.cola</groupId>
+            <groupId>com.szmengran.cola</groupId>
             <artifactId>cola-component-catchlog-starter</artifactId>
         </dependency>
 
@@ -33,8 +33,8 @@
             <artifactId>hibernate-validator</artifactId>
         </dependency>
         <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>javax.el-api</artifactId>
+            <groupId>jakarta.el</groupId>
+            <artifactId>jakarta.el-api</artifactId>
         </dependency>
         <dependency>
             <groupId>org.glassfish</groupId>

@@ -1,6 +1,6 @@
 package com.alibaba.craftsman.domain;
 
-import com.alibaba.cola.exception.BizException;
+import com.szmengran.cola.exception.BizException;
 import com.alibaba.craftsman.domain.metrics.appquality.AppMetric;
 import com.alibaba.craftsman.domain.metrics.appquality.AppMetricItem;
 import com.alibaba.craftsman.domain.metrics.appquality.AppQualityMetric;
@@ -10,11 +10,8 @@ import com.alibaba.craftsman.domain.metrics.devquality.DevQualityMetric;
 import com.alibaba.craftsman.domain.metrics.techcontribution.CodeReviewMetric;
 import com.alibaba.craftsman.domain.metrics.techcontribution.CodeReviewMetricItem;
 import com.alibaba.craftsman.domain.metrics.techcontribution.ContributionMetric;
-import com.alibaba.craftsman.domain.metrics.techinfluence.ATAMetric;
-import com.alibaba.craftsman.domain.metrics.techinfluence.ATAMetricItem;
 import com.alibaba.craftsman.domain.metrics.techinfluence.InfluenceMetric;
 import com.alibaba.craftsman.domain.metrics.weight.DevWeight;
-import com.alibaba.craftsman.domain.metrics.weight.QAWeight;
 import com.alibaba.craftsman.domain.user.UserProfile;
 import org.junit.Assert;
 import org.junit.Test;

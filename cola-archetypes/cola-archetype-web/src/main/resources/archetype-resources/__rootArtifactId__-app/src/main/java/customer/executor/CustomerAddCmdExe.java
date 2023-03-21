@@ -4,8 +4,8 @@
 
 package ${package}.customer.executor;
 
-import com.alibaba.cola.dto.Response;
-import com.alibaba.cola.exception.BizException;
+import com.szmengran.cola.dto.Response;
+import com.szmengran.cola.exception.BizException;
 import ${package}.dto.CustomerAddCmd;
 import ${package}.dto.data.ErrorCode;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package com.alibaba.craftsman.dto.clientobject;
 
-import com.alibaba.cola.dto.ClientObject;
+import com.szmengran.cola.dto.ClientObject;
 import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;

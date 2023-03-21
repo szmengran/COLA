@@ -3,7 +3,7 @@
 #set( $symbol_escape = '\' )
 package ${package}.customer.executor.query;
 
-import com.alibaba.cola.dto.MultiResponse;
+import com.szmengran.cola.dto.MultiResponse;
 import ${package}.dto.CustomerListByNameQry;
 import ${package}.dto.data.CustomerDTO;
 import java.util.ArrayList;

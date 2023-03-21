@@ -1,6 +1,6 @@
 package com.alibaba.craftsman.command.query;
 
-import com.alibaba.cola.dto.MultiResponse;
+import com.szmengran.cola.dto.MultiResponse;
 import com.alibaba.craftsman.domain.metrics.SubMetricType;
 import com.alibaba.craftsman.dto.ATAMetricQry;
 import com.alibaba.craftsman.dto.clientobject.ATAMetricCO;

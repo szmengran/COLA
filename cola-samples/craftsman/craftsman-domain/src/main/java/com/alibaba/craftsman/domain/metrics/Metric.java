@@ -1,7 +1,7 @@
 package com.alibaba.craftsman.domain.metrics;
 
 
-import com.alibaba.cola.domain.Entity;
+import com.szmengran.cola.domain.Entity;
 import com.alibaba.craftsman.domain.user.UserProfile;
 import lombok.Getter;
 import lombok.Setter;

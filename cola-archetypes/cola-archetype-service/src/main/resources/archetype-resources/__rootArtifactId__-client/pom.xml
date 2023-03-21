@@ -14,12 +14,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.alibaba.cola</groupId>
+            <groupId>com.szmengran.cola</groupId>
             <artifactId>cola-component-dto</artifactId>
         </dependency>
         <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
         </dependency>
     </dependencies>
 </project>

@@ -1,9 +1,9 @@
 package com.alibaba.craftsman.service;
 
-import com.alibaba.cola.catchlog.CatchAndLog;
-import com.alibaba.cola.dto.MultiResponse;
-import com.alibaba.cola.dto.Response;
-import com.alibaba.cola.dto.SingleResponse;
+import com.szmengran.cola.catchlog.CatchAndLog;
+import com.szmengran.cola.dto.MultiResponse;
+import com.szmengran.cola.dto.Response;
+import com.szmengran.cola.dto.SingleResponse;
 import com.alibaba.craftsman.api.UserProfileServiceI;
 import com.alibaba.craftsman.command.RefreshScoreCmdExe;
 import com.alibaba.craftsman.command.UserProfileAddCmdExe;

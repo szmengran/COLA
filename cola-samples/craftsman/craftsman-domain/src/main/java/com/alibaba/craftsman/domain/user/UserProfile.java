@@ -1,7 +1,7 @@
 package com.alibaba.craftsman.domain.user;
 
-import com.alibaba.cola.domain.Entity;
-import com.alibaba.cola.exception.Assert;
+import com.szmengran.cola.domain.Entity;
+import com.szmengran.cola.exception.Assert;
 import com.alibaba.craftsman.domain.metrics.appquality.AppQualityMetric;
 import com.alibaba.craftsman.domain.metrics.devquality.DevQualityMetric;
 import com.alibaba.craftsman.domain.metrics.weight.Weight;
