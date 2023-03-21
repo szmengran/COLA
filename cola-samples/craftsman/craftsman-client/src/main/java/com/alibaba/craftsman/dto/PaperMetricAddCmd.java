@@ -4,7 +4,7 @@ import com.alibaba.craftsman.dto.clientobject.PaperMetricCO;
 import com.alibaba.craftsman.dto.clientobject.PatentMetricCO;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * PaperMetricAddCmd

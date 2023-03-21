@@ -4,7 +4,7 @@ import com.alibaba.craftsman.dto.clientobject.MiscMetricCO;
 import com.alibaba.craftsman.dto.clientobject.RefactoringMetricCO;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * RefactoringMetricAddCmd

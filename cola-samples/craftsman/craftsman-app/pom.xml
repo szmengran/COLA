@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.alibaba.craftsman</groupId>
+        <groupId>com.szmengran.craftsman</groupId>
         <artifactId>craftsman.all</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
@@ -15,16 +15,16 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.alibaba.craftsman</groupId>
-            <artifactId>craftsman-client</artifactId>
+            <groupId>com.szmengran.craftsman</groupId>
+            <artifactId>craftsman-domain</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.alibaba.craftsman</groupId>
+            <groupId>com.szmengran.craftsman</groupId>
             <artifactId>craftsman-infrastructure</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.alibaba.cola</groupId>
+            <groupId>com.szmengran.cola</groupId>
             <artifactId>cola-component-catchlog-starter</artifactId>
         </dependency>
 
@@ -34,13 +34,17 @@
             <artifactId>hibernate-validator</artifactId>
         </dependency>
         <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>javax.el-api</artifactId>
+            <groupId>jakarta.el</groupId>
+            <artifactId>jakarta.el-api</artifactId>
         </dependency>
         <dependency>
             <groupId>org.glassfish</groupId>
             <artifactId>jakarta.el</artifactId>
         </dependency>
         <!-- JSR 303 Validation End-->
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+        </dependency>
     </dependencies>
 </project>

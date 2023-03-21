@@ -3,23 +3,26 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.alibaba.craftsman</groupId>
+    <groupId>com.szmengran.craftsman</groupId>
     <artifactId>craftsman.all</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <name>craftsman.all</name>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.deploy.skip>true</maven.deploy.skip>
 
-        <cola.components.version>4.4.0-SNAPSHOT</cola.components.version>
+        <cola.components.version>5.0.0-SNAPSHOT</cola.components.version>
 
-        <spring-boot.version>2.7.5</spring-boot.version>
+        <spring-boot.version>3.0.4</spring-boot.version>
         <mybatis-starter.version>2.2.2</mybatis-starter.version>
+        <jakarta.version>6.0.0</jakarta.version>
+        <jakarta.annotation-api.version>2.1.1</jakarta.annotation-api.version>
+        <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
     </properties>
 
     <modules>
@@ -28,7 +31,7 @@
         <module>craftsman-app</module>
         <module>craftsman-domain</module>
         <module>craftsman-infrastructure</module>
-        <module>start</module>
+        <module>craftsman-start</module>
     </modules>
 
     <dependencies>
@@ -48,34 +51,34 @@
         <dependencies>
             <!--Project modules-->
             <dependency>
-                <groupId>com.alibaba.craftsman</groupId>
+                <groupId>com.szmengran.craftsman</groupId>
                 <artifactId>craftsman-adapter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alibaba.craftsman</groupId>
+                <groupId>com.szmengran.craftsman</groupId>
                 <artifactId>craftsman-client</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alibaba.craftsman</groupId>
+                <groupId>com.szmengran.craftsman</groupId>
                 <artifactId>craftsman-app</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alibaba.craftsman</groupId>
+                <groupId>com.szmengran.craftsman</groupId>
                 <artifactId>craftsman-domain</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alibaba.craftsman</groupId>
+                <groupId>com.szmengran.craftsman</groupId>
                 <artifactId>craftsman-infrastructure</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <!--Project modules End-->
             <dependency>
-                <groupId>com.alibaba.cola</groupId>
+                <groupId>com.szmengran.cola</groupId>
                 <artifactId>cola-components-bom</artifactId>
                 <version>${cola.components.version}</version>
                 <type>pom</type>
@@ -102,19 +105,46 @@
                 are declared in spring-boot-dependencies
             -->
             <dependency>
-                <groupId>javax.el</groupId>
-                <artifactId>javax.el-api</artifactId>
-                <version>3.0.0</version>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
+                <version>${jakarta.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.annotation</groupId>
+                <artifactId>jakarta.annotation-api</artifactId>
+                <version>${jakarta.annotation-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${jakarta.validation-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.el</groupId>
+                <artifactId>jakarta.el-api</artifactId>
+                <version>5.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish</groupId>
+                <artifactId>jakarta.el</artifactId>
+                <version>5.0.0-M1</version>
             </dependency>
             <!--Validation API End -->
 
             <!-- Misc -->
             <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>1.2.83</version>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>2.0.26</version>
+                <scope>provided</scope>
             </dependency>
             <!-- Misc End -->
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.32</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -215,4 +245,11 @@
             </build>
         </profile>
     </profiles>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>

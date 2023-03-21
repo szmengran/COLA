@@ -1,6 +1,6 @@
 package com.alibaba.craftsman.domain.metrics;
 
-import com.alibaba.fastjson.serializer.PropertyFilter;
+import com.alibaba.fastjson2.filter.PropertyFilter;
 
 /**
  * JSONPropertyFilter

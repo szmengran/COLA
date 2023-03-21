@@ -1,8 +1,8 @@
 package com.alibaba.craftsman.domain.metrics.techcontribution;
 
+import com.alibaba.fastjson2.JSON;
 import com.szmengran.cola.exception.Assert;
 import com.alibaba.craftsman.domain.metrics.MetricItem;
-import com.alibaba.fastjson.JSON;
 import lombok.Data;
 
 /**

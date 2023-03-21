@@ -8,7 +8,7 @@ import com.alibaba.craftsman.gatewayimpl.database.dataobject.UserProfileDO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 @Component
 public class UserProfileGetQryExe {
