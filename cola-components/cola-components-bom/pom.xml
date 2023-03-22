@@ -8,7 +8,7 @@
         Maven BOM Template
         https://github.com/anliksim/maven-template-bom
     -->
-    <groupId>com.szmengran.cola</groupId>
+    <groupId>com.szmengran</groupId>
     <artifactId>cola-components-bom</artifactId>
     <version>5.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -60,47 +60,58 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.szmengran.cola</groupId>
+                <groupId>com.szmengran</groupId>
                 <artifactId>cola-component-dto</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.szmengran.cola</groupId>
+                <groupId>com.szmengran</groupId>
                 <artifactId>cola-component-exception</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.szmengran.cola</groupId>
+                <groupId>com.szmengran</groupId>
                 <artifactId>cola-component-statemachine</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.szmengran.cola</groupId>
+                <groupId>com.szmengran</groupId>
                 <artifactId>cola-component-domain-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.szmengran.cola</groupId>
+                <groupId>com.szmengran</groupId>
                 <artifactId>cola-component-extension-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.szmengran.cola</groupId>
+                <groupId>com.szmengran</groupId>
                 <artifactId>cola-component-catchlog-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.szmengran.cola</groupId>
+                <groupId>com.szmengran</groupId>
                 <artifactId>cola-component-test-container</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.szmengran</groupId>
+                <artifactId>cola-component-base</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
 
     <distributionManagement>
+        <repository>
+            <id>ossrh</id>
+            <name>Release</name>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
         <snapshotRepository>
             <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <name>SNAPSHOTS</name>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
