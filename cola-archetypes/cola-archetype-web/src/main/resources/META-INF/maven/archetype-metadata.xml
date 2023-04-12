@@ -107,7 +107,7 @@
             </fileSets>
         </module>
 
-        <module id="${rootArtifactId}-start" dir="${rootArtifactId}-start" name="${rootArtifactId}-start">
+        <module id="${rootArtifactId}-start" dir="__rootArtifactId__-start" name="${rootArtifactId}-start">
             <fileSets>
                 <fileSet filtered="true" packaged="true" encoding="UTF-8">
                     <directory>src/main/java</directory>
