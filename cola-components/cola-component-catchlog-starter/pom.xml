@@ -85,12 +85,12 @@
 
         <!-- cola组件依赖 -->
         <dependency>
-            <groupId>com.szmengran</groupId>
+            <groupId>com.szmengran.cola</groupId>
             <artifactId>cola-component-dto</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.szmengran</groupId>
+            <groupId>com.szmengran.cola</groupId>
             <artifactId>cola-component-exception</artifactId>
             <version>${project.version}</version>
         </dependency>

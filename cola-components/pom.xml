@@ -66,6 +66,7 @@
         <module>cola-component-test-container</module>
         <module>cola-components-bom</module>
         <module>cola-component-base</module>
+        <module>cola-components-dependencies</module>
     </modules>
 
     <properties>
