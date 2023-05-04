@@ -87,8 +87,8 @@ mvn archetype:generate \
     -Dversion=1.0.0-SNAPSHOT \
     -Dpackage=com.alibaba.demo \
     -DarchetypeArtifactId=cola-framework-archetype-web \
-    -DarchetypeGroupId=com.alibaba.cola \
-    -DarchetypeVersion=4.3.1
+    -DarchetypeGroupId=com.szmengran.cola \
+    -DarchetypeVersion=3.0.4
 ```
 
 命令执行成功的话，会看到如下的应用代码结构：
@@ -113,8 +113,8 @@ mvn archetype:generate \
     -Dversion=1.0.0-SNAPSHOT \
     -Dpackage=com.alibaba.demo \
     -DarchetypeArtifactId=cola-framework-archetype-service \
-    -DarchetypeGroupId=com.alibaba.cola \
-    -DarchetypeVersion=4.3.1
+    -DarchetypeGroupId=com.szmengran.cola \
+    -DarchetypeVersion=3.0.4
 ```
 
 # 版本迭代

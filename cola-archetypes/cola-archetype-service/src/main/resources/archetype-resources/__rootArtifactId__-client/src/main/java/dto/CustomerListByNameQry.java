@@ -3,7 +3,7 @@
 #set( $symbol_escape = '\' )
 package ${package}.dto;
 
-import com.alibaba.cola.dto.Query;
+import com.szmengran.cola.dto.Query;
 import lombok.Data;
 
 @Data
