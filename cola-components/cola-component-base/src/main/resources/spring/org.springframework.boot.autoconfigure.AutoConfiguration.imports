@@ -1,0 +1,3 @@
+com.szmengran.base.token.JwtProperties
+com.szmengran.base.token.TokenConfig
+com.szmengran.base.token.SecurityConfig
