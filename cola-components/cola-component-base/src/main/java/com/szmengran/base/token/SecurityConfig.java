@@ -11,6 +11,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
+import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 /**
@@ -21,19 +22,13 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfig {
 
-
     @Resource
-    private JwtDecoder jwtDecoder;
-
-    @Resource
-    private UserDetailsService userDetailsService;
-
+    private JwtProperties jwtProperties;
 
     @Bean
-    public PasswordEncoder passwordEncoder() {
-        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+    public JwtDecoder jwtDecoder() {
+        return NimbusJwtDecoder.withJwkSetUri(jwtProperties.getUrl()).build();
     }
-
 
     @Bean
     @Order(1)
@@ -41,25 +36,14 @@ public class SecurityConfig {
             throws Exception {
         http.authorizeHttpRequests()
                 .requestMatchers("/rsa/publicKey").permitAll()
-                .requestMatchers("/doc.html").permitAll()
+                .requestMatchers("/*.html").permitAll()
+                .requestMatchers("/webjars/js/**").permitAll()
+                .requestMatchers("/webjars/css/**").permitAll()
+                .requestMatchers("/favicon.ico").permitAll()
+                .requestMatchers("/v3/api-docs/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);
-        return http.build();
-    }
-
-    @Bean
-    @Order(2)
-    public SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http)
-            throws Exception {
-        http
-                .authorizeHttpRequests((authorize) -> authorize
-                        .anyRequest().authenticated()
-                )
-                // Form login handles the redirect to the login page from the
-                // authorization server filter chain
-                .formLogin(Customizer.withDefaults());
-
         return http.build();
     }
 

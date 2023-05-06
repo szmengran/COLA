@@ -14,6 +14,6 @@ import org.springframework.context.annotation.Configuration;
 @Data
 public class JwtProperties {
 
-    private String publicKey;
+    private String url;
 
 }
