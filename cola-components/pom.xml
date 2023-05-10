@@ -76,6 +76,8 @@
     </modules>
 
     <properties>
+        <revision>3.0.4</revision>
+
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -84,15 +86,16 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <jakarta.version>6.0.0</jakarta.version>
+        <jakarta.el-api.version>5.0.1</jakarta.el-api.version>
         <jakarta.annotation-api.version>2.1.1</jakarta.annotation-api.version>
         <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
 
         <spring-boot.version>3.0.4</spring-boot.version>
-        <revision>3.0.4</revision>
-
+        <spring-boot-starter-log4j2.version>3.0.0</spring-boot-starter-log4j2.version>
+        <spring-cloud-starter-openfeign.version>4.0.2</spring-cloud-starter-openfeign.version>
         <spring-cloud.version>2022.0.2</spring-cloud.version>
-        <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>
-        <fastjson.version>2.0.24</fastjson.version>
+        <spring-cloud-alibaba.version>2022.0.0.0-RC2</spring-cloud-alibaba.version>
+
         <hibernate-validator.version>8.0.0.Final</hibernate-validator.version>
         <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
         <pagehelper-spring.version>1.4.6</pagehelper-spring.version>
@@ -110,9 +113,6 @@
         <junit.version>4.13.2</junit.version>
         <jjwt.version>0.11.2</jjwt.version>
         <guava.version>22.0</guava.version>
-        <springdoc.version>1.6.14</springdoc.version>
-
-        <nacos-client.version>2.1.2</nacos-client.version>
 
         <weixin-java.version>4.2.8.B</weixin-java.version>
         <dubbo.version>3.2.0</dubbo.version>
@@ -131,7 +131,7 @@
 
         <fastjson2.version>2.0.26</fastjson2.version>
         <commons.version>1.5.0</commons.version>
-        <spring-boot-starter-log4j2.version>3.0.0</spring-boot-starter-log4j2.version>
+        <knife4j-openapi3.version>4.1.0</knife4j-openapi3.version>
     </properties>
 
     <dependencies>
@@ -151,6 +151,20 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>com.szmengran.cola</groupId>
                 <artifactId>cola-component-dto</artifactId>
@@ -197,7 +211,6 @@
                 <groupId>com.alibaba.fastjson2</groupId>
                 <artifactId>fastjson2</artifactId>
                 <version>${fastjson2.version}</version>
-                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>commons-cli</groupId>
@@ -290,18 +303,8 @@
                 <version>${jjwt.version}</version>
                 <scope>runtime</scope>
             </dependency>
-            <dependency>
-                <groupId>org.springdoc</groupId>
-                <artifactId>springdoc-openapi-ui</artifactId>
-                <version>${springdoc.version}</version>
-            </dependency>
 
             <!-- dubbo -->
-            <dependency>
-                <groupId>com.alibaba.nacos</groupId>
-                <artifactId>nacos-client</artifactId>
-                <version>${nacos-client.version}</version>
-            </dependency>
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-registry-nacos</artifactId>
@@ -344,6 +347,34 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-log4j2</artifactId>
                 <version>${spring-boot-starter-log4j2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${spring-cloud-starter-openfeign.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <version>${knife4j-openapi3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${jakarta.validation-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.el</groupId>
+                <artifactId>jakarta.el-api</artifactId>
+                <version>${jakarta.el-api.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
