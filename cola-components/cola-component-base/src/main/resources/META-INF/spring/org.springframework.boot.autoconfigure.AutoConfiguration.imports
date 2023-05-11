@@ -1,2 +1,2 @@
-token.com.szmengran.cola.base.JwtProperties
-token.com.szmengran.cola.base.ResourceSecurityConfig
+com.szmengran.cola.base.token.JwtProperties
+com.szmengran.cola.base.token.ResourceSecurityConfig
