@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-parent</artifactId>
-        <version>3.0.4</version>
+        <version>3.0.6</version>
     </parent>
 
     <groupId>com.szmengran.cola</groupId>
@@ -76,7 +76,7 @@
     </modules>
 
     <properties>
-        <revision>3.0.4</revision>
+        <revision>3.0.6</revision>
 
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
@@ -90,7 +90,6 @@
         <jakarta.annotation-api.version>2.1.1</jakarta.annotation-api.version>
         <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
 
-        <spring-boot.version>3.0.4</spring-boot.version>
         <spring-boot-starter-log4j2.version>3.0.0</spring-boot-starter-log4j2.version>
         <spring-cloud-starter-openfeign.version>4.0.2</spring-cloud-starter-openfeign.version>
         <spring-cloud.version>2022.0.2</spring-cloud.version>
@@ -314,6 +313,11 @@
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
                 <version>${dubbo.version}</version>
             </dependency>
 
