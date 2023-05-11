@@ -1,4 +1,4 @@
-package com.szmengran.base.annotation;
+package com.szmengran.cola.base.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

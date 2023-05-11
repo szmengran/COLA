@@ -1,4 +1,4 @@
-package com.szmengran.base.token;
+package com.szmengran.cola.base.token;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

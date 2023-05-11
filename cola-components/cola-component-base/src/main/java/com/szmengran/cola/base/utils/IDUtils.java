@@ -1,4 +1,4 @@
-package com.szmengran.base.utils;
+package com.szmengran.cola.base.utils;
 
 /**
  * @description: 雪花算法实现的ID生成工具类

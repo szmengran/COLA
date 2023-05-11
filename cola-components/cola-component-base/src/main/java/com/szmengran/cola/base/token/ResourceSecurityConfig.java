@@ -1,4 +1,4 @@
-package com.szmengran.base.token;
+package com.szmengran.cola.base.token;
 
 import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Bean;

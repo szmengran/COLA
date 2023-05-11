@@ -1,4 +1,4 @@
-package com.szmengran.base.annotation;
+package com.szmengran.cola.base.annotation;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

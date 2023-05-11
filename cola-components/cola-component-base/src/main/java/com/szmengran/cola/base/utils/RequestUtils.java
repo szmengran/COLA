@@ -1,4 +1,4 @@
-package com.szmengran.base.utils;
+package com.szmengran.cola.base.utils;
 
 import jakarta.servlet.http.HttpServletRequest;
 
