@@ -1,6 +1,7 @@
 package com.szmengran.cola.base.token;
 
 import jakarta.annotation.Resource;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
@@ -22,12 +23,14 @@ public class ResourceSecurityConfig {
     private JwtProperties jwtProperties;
 
     @Bean
+    @ConditionalOnMissingBean
     public JwtDecoder jwtDecoder() {
         return NimbusJwtDecoder.withJwkSetUri(jwtProperties.getUrl()).build();
     }
 
     @Bean
     @Order(1)
+    @ConditionalOnMissingBean
     public SecurityFilterChain authorizationServerSecurityFilterChain(HttpSecurity http)
             throws Exception {
         http.authorizeHttpRequests()
