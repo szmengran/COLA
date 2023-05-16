@@ -2,7 +2,6 @@ package com.szmengran.cola.base.jackson2;
 
 import org.apache.dubbo.spring.security.jackson.ObjectMapperCodec;
 import org.apache.dubbo.spring.security.jackson.ObjectMapperCodecCustomer;
-import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 
 /**
  * @Author MaoYuan.Li

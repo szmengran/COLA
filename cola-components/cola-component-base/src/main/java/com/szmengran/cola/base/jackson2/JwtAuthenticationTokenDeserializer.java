@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JacksonException;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 
 import java.io.IOException;
@@ -17,7 +18,8 @@ public class JwtAuthenticationTokenDeserializer extends JsonDeserializer<JwtAuth
 
     @Override
     public JwtAuthenticationToken deserialize(final JsonParser jsonParser, final DeserializationContext deserializationContext) throws IOException, JacksonException {
-        return null;
+        Jwt jwt = jsonParser.readValueAs(Jwt.class);
+        return new JwtAuthenticationToken(jwt);
     }
 
 }
