@@ -136,6 +136,8 @@
         <spring-security-oauth2-authorization-server.version>1.0.1</spring-security-oauth2-authorization-server.version>
         <aliyunUsername>${env.ALIYUN_USERNAME}</aliyunUsername>
         <aliyunPassword>${env.ALIYUN_PASSWORD}</aliyunPassword>
+
+        <szmengran-framework.version>1.0.0</szmengran-framework.version>
     </properties>
 
     <dependencies>
@@ -410,6 +412,11 @@
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-oauth2-authorization-server</artifactId>
                 <version>${spring-security-oauth2-authorization-server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.szmengran.framework</groupId>
+                <artifactId>szmengran-framework-rocketmq-starter</artifactId>
+                <version>${szmengran-framework.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
