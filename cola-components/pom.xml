@@ -99,7 +99,7 @@
         <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
         <pagehelper-spring.version>1.4.6</pagehelper-spring.version>
         <mysql.version>8.0.33</mysql.version>
-        <rocketmq-spring.version>2.2.1</rocketmq-spring.version>
+        <rocketmq-spring.version>2.2.3</rocketmq-spring.version>
         <redisson-spring.version>3.20.0</redisson-spring.version>
         <reflections.version>0.10.2</reflections.version>
 
@@ -133,6 +133,7 @@
         <knife4j-openapi3.version>4.1.0</knife4j-openapi3.version>
         <protobuf.version>3.22.4</protobuf.version>
         <transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
+        <spring-security-oauth2-authorization-server.version>1.0.1</spring-security-oauth2-authorization-server.version>
         <aliyunUsername>${env.ALIYUN_USERNAME}</aliyunUsername>
         <aliyunPassword>${env.ALIYUN_PASSWORD}</aliyunPassword>
     </properties>
@@ -408,7 +409,7 @@
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-oauth2-authorization-server</artifactId>
-                <version>1.0.1</version>
+                <version>${spring-security-oauth2-authorization-server.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
