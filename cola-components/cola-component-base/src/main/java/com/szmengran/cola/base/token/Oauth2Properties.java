@@ -1,6 +1,7 @@
 package com.szmengran.cola.base.token;
 
 import lombok.Data;
+
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
@@ -9,12 +10,20 @@ import org.springframework.context.annotation.Configuration;
  * @Author: limy66
  * @Date:   2021/1/22 10:17
  */
-@ConfigurationProperties(prefix = "jwt")
-@Configuration
 @Data
-public class JwtProperties {
+@Configuration
+@ConfigurationProperties(prefix = "oauth2")
+public class Oauth2Properties {
 
-    private String url;
-    private String[] ignoreUrls;
+    private Jwt jwt;
+
+    private String serverName;
+
+    @Data
+    public static class Jwt {
+        private String url;
+        private String[] ignoreUrls;
+    }
+
 
 }
