@@ -33,7 +33,8 @@ public class ResourceSecurityConfig {
     @ConditionalOnMissingBean
     public SecurityFilterChain resourceServerSecurityFilterChain(HttpSecurity http)
             throws Exception {
-        http.authorizeHttpRequests()
+        http.csrf().disable()
+                .authorizeHttpRequests()
                 .requestMatchers(oauth2Properties.getJwt().getIgnoreUrls()).permitAll()
                 .anyRequest().authenticated()
                 .and()
