@@ -73,6 +73,7 @@
         <module>cola-components-bom</module>
         <module>cola-component-base</module>
         <module>cola-components-dependencies</module>
+        <module>cola-components-starter-graceful-shutdown</module>
     </modules>
 
     <properties>

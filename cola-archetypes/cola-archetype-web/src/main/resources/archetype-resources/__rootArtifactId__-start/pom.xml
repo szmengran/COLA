@@ -35,6 +35,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.szmengran.cola</groupId>
+            <artifactId>cola-components-starter-graceful-shutdown</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

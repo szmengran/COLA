@@ -3,15 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!--
-        a dummy aggregation parent pom for development.
-
-        simplify the development process for all cola modules including examples modules, e.g.
-        - maven test/install
-        - import to IDE
-    -->
-    <groupId>com.alibaba.cola</groupId>
-    <artifactId>cola-dummy-aggregation-parent</artifactId>
+    <groupId>com.szmengran.cola</groupId>
+    <artifactId>cola-parent</artifactId>
     <version>5.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 

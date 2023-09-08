@@ -22,7 +22,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.deploy.skip>true</maven.deploy.skip>
 
-        <spring-boot.version>3.0.4</spring-boot.version>
+        <spring-boot.version>3.0.6</spring-boot.version>
+        <cola-components.version>3.0.6</cola-components.version>
         <mybatis-starter.version>2.2.2</mybatis-starter.version>
         <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
     </properties>
@@ -117,6 +118,13 @@
                 <version>2.0.26</version>
             </dependency>
             <!-- Misc End -->
+
+            <!-- 优雅停机 -->
+            <dependency>
+                <groupId>com.szmengran.cola</groupId>
+                <artifactId>cola-components-starter-graceful-shutdown</artifactId>
+                <version>${cola-components.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
