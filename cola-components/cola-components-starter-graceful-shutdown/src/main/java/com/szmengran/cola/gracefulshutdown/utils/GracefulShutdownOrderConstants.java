@@ -8,7 +8,7 @@ package com.szmengran.cola.gracefulshutdown.utils;
 public interface GracefulShutdownOrderConstants {
 
     public final static Integer NACOS = 1;
-    public final static Integer DUBBO = 2;
-    public final static Integer TOMCAT = 3;
+    public final static Integer TOMCAT = 2;
+    public final static Integer DUBBO = 3;
 
 }
