@@ -1,2 +1,3 @@
 com.szmengran.cola.base.token.Oauth2Properties
 com.szmengran.cola.base.token.ResourceSecurityConfig
+com.szmengran.cola.base.hikari.HikariPoolConfig
