@@ -115,7 +115,7 @@
         <guava.version>22.0</guava.version>
 
         <weixin-java.version>4.2.8.B</weixin-java.version>
-        <dubbo.version>3.2.0</dubbo.version>
+        <dubbo.version>3.2.7</dubbo.version>
         <aliyun.version>4.6.0</aliyun.version>
         <aliyun-sdk-oss.version>3.14.0</aliyun-sdk-oss.version>
         <wechatpay.version>0.4.4</wechatpay.version>
