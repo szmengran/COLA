@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.szmengran.cola</groupId>
         <artifactId>cola-components-dependencies</artifactId>
-        <version>3.1.4</version>
+        <version>3.2.5</version>
     </parent>
 
     <groupId>${groupId}</groupId>
@@ -22,10 +22,13 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.deploy.skip>true</maven.deploy.skip>
 
-        <spring-boot.version>3.0.6</spring-boot.version>
-        <cola-components.version>3.0.6</cola-components.version>
-        <mybatis-starter.version>2.2.2</mybatis-starter.version>
-        <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
+        <jakarta.validation-api.version>3.1.0-M2</jakarta.validation-api.version>
+        <spring-boot.version>3.2.5</spring-boot.version>
+        <mybatis-starter.version>3.0.3</mybatis-starter.version>
+        <fastjson2.version>2.0.49</fastjson2.version>
+        <nacos-client.version>2.2.1</nacos-client.version>
+        <jakarta.el-api.version>6.0.0</jakarta.el-api.version>
+        <jakarta.el.version>5.0.0-M1</jakarta.el.version>
     </properties>
 
     <modules>
@@ -101,12 +104,12 @@
             <dependency>
                 <groupId>jakarta.el</groupId>
                 <artifactId>jakarta.el-api</artifactId>
-                <version>5.0.1</version>
+                <version>${jakarta.el-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.glassfish</groupId>
                 <artifactId>jakarta.el</artifactId>
-                <version>5.0.0-M1</version>
+                <version>${jakarta.el.version}</version>
                 <scope>test</scope>
             </dependency>
             <!--Validation API End -->
@@ -115,15 +118,14 @@
             <dependency>
                 <groupId>com.alibaba.fastjson2</groupId>
                 <artifactId>fastjson2</artifactId>
-                <version>2.0.26</version>
+                <version>${fastjson2.version}</version>
             </dependency>
             <!-- Misc End -->
 
-            <!-- 优雅停机 -->
             <dependency>
-                <groupId>com.szmengran.cola</groupId>
-                <artifactId>cola-components-starter-graceful-shutdown</artifactId>
-                <version>${cola-components.version}</version>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>${nacos-client.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

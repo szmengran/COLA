@@ -2,12 +2,12 @@ package com.szmengran.cola.catchlog.test;
 
 import com.szmengran.cola.catchlog.CatchLogAspect;
 import com.szmengran.cola.catchlog.CatchLogAutoConfiguration;
+import jakarta.annotation.Resource;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import javax.annotation.Resource;
 
 /**
  *

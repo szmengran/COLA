@@ -1,16 +1,12 @@
 package com.szmengran.cola.base.hikari;
 
-import java.sql.Connection;
-
-import javax.sql.DataSource;
-
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import javax.sql.DataSource;
 
 /**
  *

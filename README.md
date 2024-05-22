@@ -82,13 +82,14 @@ COLA架构区别于这些架构的地方，在于除了思想之外，我们还�
 
 ```bash
 mvn archetype:generate \
-    -DgroupId=com.alibaba.cola.demo.web \
-    -DartifactId=demo-web \
+    -DgroupId=com.szmengran \
+    -DartifactId=shopoo-spring-security \
     -Dversion=1.0.0-SNAPSHOT \
-    -Dpackage=com.alibaba.demo \
+    -Dpackage=com.szmengran.security \
     -DarchetypeArtifactId=cola-framework-archetype-web \
     -DarchetypeGroupId=com.szmengran.cola \
-    -DarchetypeVersion=3.0.4
+    -DarchetypeVersion=5.0.0-SNAPSHOT
+    -DinteractiveMode=false
 ```
 
 命令执行成功的话，会看到如下的应用代码结构：
@@ -108,13 +109,14 @@ mvn archetype:generate \
 
 ```bash
 mvn archetype:generate \
-    -DgroupId=com.alibaba.cola.demo.service \
+    -DgroupId=com.szmengran \
     -DartifactId=demo-service \
     -Dversion=1.0.0-SNAPSHOT \
-    -Dpackage=com.alibaba.demo \
+    -Dpackage=com.szmengran \
     -DarchetypeArtifactId=cola-framework-archetype-service \
     -DarchetypeGroupId=com.szmengran.cola \
-    -DarchetypeVersion=3.0.4
+    -DarchetypeVersion=5.0.0-SNAPSHOT
+    -DinteractiveMode=false
 ```
 
 # 版本迭代

@@ -119,7 +119,7 @@
                     <directory>src/main/resources</directory>
                     <includes>
                         <include>**/*.xml</include>
-                        <include>**/*.properties</include>
+                        <include>**/*.yaml</include>
                     </includes>
                 </fileSet>
                 <fileSet filtered="true" packaged="true" encoding="UTF-8">
@@ -132,7 +132,6 @@
                     <directory>src/test/resources</directory>
                     <includes>
                         <include>**/*.xml</include>
-                        <include>**/*.properties</include>
                     </includes>
                 </fileSet>
             </fileSets>

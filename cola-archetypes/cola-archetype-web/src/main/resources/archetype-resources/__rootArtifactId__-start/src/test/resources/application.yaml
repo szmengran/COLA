@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: ${ENVIRONMENT}
+  application:
+    name: ${artifactId}
+  cloud:
+    nacos:
+      username: ${NACOS_USERNAME}
+      password: ${NACOS_PASSWORD}
+      discovery:
+        namespace: ${spring.profiles.active}
+        server-addr: ${NACOS_SERVER_ADDRESS}
+      config:
+        namespace: ${spring.profiles.active}
+        server-addr: ${NACOS_SERVER_ADDRESS}
+  config:
+    import:
+      - nacos:common.yaml
+      - nacos:common-dubbo.yaml
+      - nacos:knife4j.yaml
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
