@@ -11,20 +11,21 @@
     <description>${project.artifactId}</description>
     <url>https://github.com/alibaba/COLA</url>
 
+
     <licenses>
         <license>
-            <name>GNU Lesser General Public License v2.1</name>
-            <url>https://github.com/alibaba/COLA/blob/master/LICENSE</url>
-            <distribution>repo</distribution>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/alibaba/COLA.git</connection>
-        <developerConnection>scm:git:https://github.com/alibaba/COLA.git</developerConnection>
-        <url>https://github.com/alibaba/COLA</url>
+        <url>https://github.com/szmengran/COLA</url>
+        <connection>scm:git:https://github.com/szmengran/COLA.git</connection>
+        <developerConnection>scm:git:git@github.com:szmengran/COLA.git</developerConnection>
     </scm>
+
     <issueManagement>
-        <url>https://github.com/alibaba/COLA/issues</url>
+        <url>https://github.com/szmengran/COLA/issues</url>
         <system>GitHub Issues</system>
     </issueManagement>
     <developers>
@@ -49,6 +50,10 @@
             </roles>
             <timezone>+8</timezone>
             <url>https://github.com/oldratlee</url>
+        </developer>
+        <developer>
+            <name>Joe</name>
+            <email>android_li@sina.cn</email>
         </developer>
     </developers>
 
@@ -129,16 +134,14 @@
     </build>
 
     <distributionManagement>
-        <repository>
-            <id>ossrh</id>
-            <name>Release</name>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
         <snapshotRepository>
-            <id>ossrh</id>
-            <name>SNAPSHOTS</name>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+            <id>nexus</id>
+            <url>http://www.szmengran.com:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
+        <repository>
+            <id>nexus</id>
+            <url>http://www.szmengran.com:8081/repository/maven-releases/</url>
+        </repository>
     </distributionManagement>
 
     <profiles>

@@ -5,8 +5,9 @@
 
     <parent>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-parent</artifactId>
-        <version>3.2.5</version>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.7</version>
+        <relativePath/>
     </parent>
 
     <groupId>com.szmengran.cola</groupId>
@@ -19,18 +20,18 @@
 
     <licenses>
         <license>
-            <name>GNU Lesser General Public License v2.1</name>
-            <url>https://github.com/alibaba/COLA/blob/master/LICENSE</url>
-            <distribution>repo</distribution>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/alibaba/COLA.git</connection>
-        <developerConnection>scm:git:https://github.com/alibaba/COLA.git</developerConnection>
-        <url>https://github.com/alibaba/COLA</url>
+        <url>https://github.com/szmengran/COLA</url>
+        <connection>scm:git:https://github.com/szmengran/COLA.git</connection>
+        <developerConnection>scm:git:git@github.com:szmengran/COLA.git</developerConnection>
     </scm>
+
     <issueManagement>
-        <url>https://github.com/alibaba/COLA/issues</url>
+        <url>https://github.com/szmengran/COLA/issues</url>
         <system>GitHub Issues</system>
     </issueManagement>
     <developers>
@@ -77,7 +78,7 @@
     </modules>
 
     <properties>
-        <revision>3.2.5</revision>
+        <revision>3.5.7</revision>
 
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
@@ -86,56 +87,55 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <jakarta.version>6.0.0</jakarta.version>
-        <jakarta.el-api.version>5.0.1</jakarta.el-api.version>
-        <jakarta.annotation-api.version>2.1.1</jakarta.annotation-api.version>
-        <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
+        <jakarta.version>6.1.0</jakarta.version>
+        <jakarta.el-api.version>6.0.1</jakarta.el-api.version>
+        <jakarta.annotation-api.version>3.0.0</jakarta.annotation-api.version>
+        <jakarta.validation-api.version>3.1.1</jakarta.validation-api.version>
 
-        <spring-boot-starter-log4j2.version>3.2.5</spring-boot-starter-log4j2.version>
-        <spring-cloud-starter-openfeign.version>4.1.1</spring-cloud-starter-openfeign.version>
-        <spring-cloud.version>2023.0.1</spring-cloud.version>
-        <spring-cloud-alibaba.version>2023.0.1.0</spring-cloud-alibaba.version>
+        <spring-cloud-starter-openfeign.version>4.3.0</spring-cloud-starter-openfeign.version>
+        <spring-cloud.version>2025.0.0</spring-cloud.version>
+        <spring-cloud-alibaba.version>2025.0.0.0</spring-cloud-alibaba.version>
 
-        <hibernate-validator.version>8.0.0.Final</hibernate-validator.version>
-        <mybatis-plus.version>3.5.6</mybatis-plus.version>
-        <mybatis-spring.version>3.0.3</mybatis-spring.version>
-        <pagehelper-spring.version>2.1.0</pagehelper-spring.version>
+        <hibernate-validator.version>9.0.1.Final</hibernate-validator.version>
+        <mybatis-plus.version>3.5.14</mybatis-plus.version>
+        <mybatis-spring.version>3.0.5</mybatis-spring.version>
+        <pagehelper-spring.version>2.1.1</pagehelper-spring.version>
         <mysql.version>8.0.33</mysql.version>
-        <rocketmq-spring.version>2.3.0</rocketmq-spring.version>
-        <redisson-spring.version>3.29.0</redisson-spring.version>
+        <rocketmq-spring.version>2.3.4</rocketmq-spring.version>
+        <redisson-spring.version>3.52.0</redisson-spring.version>
         <reflections.version>0.10.2</reflections.version>
 
         <lombok.version>1.18.32</lombok.version>
-        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <mapstruct.version>1.6.3</mapstruct.version>
         <lombok-mapstruct.version>0.2.0</lombok-mapstruct.version>
 
-        <commons-lang3.version>3.12.0</commons-lang3.version>
-        <gson.version>2.10.1</gson.version>
+        <commons-lang3.version>3.19.0</commons-lang3.version>
+        <gson.version>2.13.2</gson.version>
         <junit.version>4.13.2</junit.version>
-        <jjwt.version>0.12.5</jjwt.version>
-        <guava.version>23.0</guava.version>
+        <jjwt.version>0.13.0</jjwt.version>
+        <guava.version>33.5.0-jre</guava.version>
 
-        <weixin-java.version>4.6.0</weixin-java.version>
-        <dubbo.version>3.2.11</dubbo.version>
-        <aliyun.version>4.6.0</aliyun.version>
-        <aliyun-sdk-oss.version>3.14.0</aliyun-sdk-oss.version>
-        <wechatpay.version>0.4.9</wechatpay.version>
+        <weixin-java.version>4.7.8-20251105.104605</weixin-java.version>
+        <dubbo.version>3.3.5</dubbo.version>
+        <aliyun.version>4.7.6</aliyun.version>
+        <aliyun-sdk-oss.version>3.18.3</aliyun-sdk-oss.version>
+        <wechatpay.version>0.6.0</wechatpay.version>
 
         <!-- maven plugin -->
         <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <versions-maven-plugin.version>2.15.0</versions-maven-plugin.version>
-        <native-maven-plugin.version>0.9.21</native-maven-plugin.version>
+        <native-maven-plugin.version>0.11.2</native-maven-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <jib-maven-plugin.version>3.3.1</jib-maven-plugin.version>
         <flatten-maven-plugin.version>1.4.1</flatten-maven-plugin.version>
 
-        <fastjson2.version>2.0.49</fastjson2.version>
-        <commons.version>1.5.0</commons.version>
+        <fastjson2.version>2.0.60</fastjson2.version>
+        <commons.version>1.10.0</commons.version>
         <knife4j-openapi3.version>4.5.0</knife4j-openapi3.version>
-        <protobuf.version>4.26.1</protobuf.version>
+        <protobuf.version>4.33.0</protobuf.version>
         <transmittable-thread-local.version>2.14.5</transmittable-thread-local.version>
-        <spring-security-oauth2-authorization-server.version>1.2.4</spring-security-oauth2-authorization-server.version>
+        <spring-security-oauth2-authorization-server.version>7.0.0-RC3</spring-security-oauth2-authorization-server.version>
         <aliyunUsername>${env.ALIYUN_USERNAME}</aliyunUsername>
         <aliyunPassword>${env.ALIYUN_PASSWORD}</aliyunPassword>
 
@@ -275,7 +275,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-sleuth</artifactId>
-                <version>3.1.1</version>
+                <version>3.1.11</version>
             </dependency>
             <dependency>
                 <groupId>org.redisson</groupId>
@@ -365,7 +365,7 @@
             <dependency>
                 <groupId>com.aliyun</groupId>
                 <artifactId>dysmsapi20170525</artifactId>
-                <version>2.0.9</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <groupId>com.aliyun.oss</groupId>
@@ -376,11 +376,6 @@
                 <groupId>com.github.wechatpay-apiv3</groupId>
                 <artifactId>wechatpay-apache-httpclient</artifactId>
                 <version>${wechatpay.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-log4j2</artifactId>
-                <version>${spring-boot-starter-log4j2.version}</version>
             </dependency>
 
             <dependency>
@@ -424,6 +419,13 @@
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-oauth2-authorization-server</artifactId>
                 <version>${spring-security-oauth2-authorization-server.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-security</artifactId>
+                <scope>provided</scope>
+                <version>3.3.5</version>
             </dependency>
             <dependency>
                 <groupId>com.szmengran.framework</groupId>
@@ -562,16 +564,14 @@
     </build>
 
     <distributionManagement>
-        <repository>
-            <id>ossrh</id>
-            <name>Release</name>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
         <snapshotRepository>
-            <id>ossrh</id>
-            <name>SNAPSHOTS</name>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+            <id>nexus</id>
+            <url>http://www.szmengran.com:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
+        <repository>
+            <id>nexus</id>
+            <url>http://www.szmengran.com:8081/repository/maven-releases/</url>
+        </repository>
     </distributionManagement>
 
     <profiles>
@@ -610,7 +610,9 @@
             <build>
                 <plugins>
                     <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>3.12.0</version>
                         <executions>
                             <execution>
                                 <id>attach-javadoc</id>
@@ -683,7 +685,9 @@
             <build>
                 <plugins>
                     <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
+                        <version>3.2.8</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -715,6 +719,7 @@
                     <plugin>
                         <groupId>pl.project13.maven</groupId>
                         <artifactId>git-commit-id-plugin</artifactId>
+                        <version>6.0.0</version>
                         <executions>
                             <execution>
                                 <id>get-the-git-infos</id>
@@ -794,6 +799,7 @@
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>1.7.0</version>
                         <extensions>true</extensions>
                         <configuration>
                             <serverId>ossrh</serverId>

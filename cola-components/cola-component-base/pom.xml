@@ -55,7 +55,6 @@
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-security</artifactId>
             <scope>provided</scope>
-            <version>3.2.7</version>
         </dependency>
     </dependencies>
 </project>
