@@ -140,6 +140,7 @@
         <aliyunPassword>${env.ALIYUN_PASSWORD}</aliyunPassword>
 
         <szmengran-framework.version>1.0.0</szmengran-framework.version>
+        <springdoc.version>3.0.0-RC1</springdoc.version>
     </properties>
 
     <dependencies>
@@ -431,6 +432,16 @@
                 <groupId>com.szmengran.framework</groupId>
                 <artifactId>szmengran-framework-rocketmq-starter</artifactId>
                 <version>${szmengran-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webflux-ui</artifactId>
+                <version>${springdoc.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
