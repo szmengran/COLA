@@ -1,5 +1,6 @@
 package com.szmengran.cola.domain;
 
+import lombok.Getter;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -13,6 +14,8 @@ import org.springframework.stereotype.Component;
  */
 @Component("colaDomainApplicationContextHelper")
 public class ApplicationContextHelper implements ApplicationContextAware {
+
+    @Getter
     private static ApplicationContext applicationContext;
 
     @Override
@@ -52,7 +55,4 @@ public class ApplicationContextHelper implements ApplicationContextAware {
         return ApplicationContextHelper.applicationContext.getBean(requiredType, params);
     }
 
-    public static ApplicationContext getApplicationContext() {
-        return applicationContext;
-    }
 }

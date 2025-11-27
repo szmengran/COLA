@@ -1,5 +1,6 @@
 package com.szmengran.cola.catchlog;
 
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Component;
 @Component("colaCatchLogApplicationContextHelper")
 @Slf4j
 public class ApplicationContextHelper implements ApplicationContextAware {
+    @Getter
     private static ApplicationContext applicationContext;
 
     @Override
@@ -28,6 +30,7 @@ public class ApplicationContextHelper implements ApplicationContextAware {
         try {
             beanInstance = (T)applicationContext.getBean(targetClz);
         } catch (Exception e) {
+            log.warn("can't get bean {}", targetClz);
         }
 
         //按name查
@@ -57,7 +60,4 @@ public class ApplicationContextHelper implements ApplicationContextAware {
         return ApplicationContextHelper.applicationContext.getBean(requiredType, params);
     }
 
-    public static ApplicationContext getApplicationContext() {
-        return applicationContext;
-    }
 }
