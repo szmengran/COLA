@@ -109,7 +109,7 @@ public class PageResponse<T> extends Response {
         return response;
     }
 
-    public static <T> PageResponse<T> of(Collection<T> data, int totalCount, int pageSize, int pageIndex) {
+    public static <T> PageResponse<T> of(Collection<T> data, long totalCount, int pageSize, int pageIndex) {
         PageResponse<T> response = new PageResponse<>();
         response.setSuccess(true);
         response.setData(data);
