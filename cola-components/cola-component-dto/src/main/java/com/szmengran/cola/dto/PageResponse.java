@@ -15,7 +15,7 @@ public class PageResponse<T> extends Response {
 
     private static final long serialVersionUID = 1L;
 
-    private int totalCount = 0;
+    private long totalCount = 0;
 
     private int pageSize = 1;
 
@@ -23,19 +23,16 @@ public class PageResponse<T> extends Response {
 
     private Collection<T> data;
 
-    public int getTotalCount() {
+    public long getTotalCount() {
         return totalCount;
     }
 
-    public void setTotalCount(int totalCount) {
+    public void setTotalCount(long totalCount) {
         this.totalCount = totalCount;
     }
 
     public int getPageSize() {
-        if (pageSize < 1) {
-            return 1;
-        }
-        return pageSize;
+        return Math.max(pageSize, 1);
     }
 
     public void setPageSize(int pageSize) {
@@ -75,7 +72,7 @@ public class PageResponse<T> extends Response {
         this.data = data;
     }
 
-    public int getTotalPages() {
+    public long getTotalPages() {
         return this.totalCount % this.pageSize == 0 ? this.totalCount
             / this.pageSize : (this.totalCount / this.pageSize) + 1;
     }
